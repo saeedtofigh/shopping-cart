@@ -1,0 +1,76 @@
+.card{
+    display: flex;
+    background-color: $white;
+    width: 300px;
+    border: 18px;
+    box-shadow: 0 0 3px 2px #eee;
+    &_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    &-img{
+        width: 100%;
+        clear: both;
+    }
+    &-heading{
+        font-size: 2.1rem;
+        font-weight: 700;
+        margin: 1.5rem 0;
+    }
+    &-title{
+        font-size: 2.1rem;
+        font-weight: 400;
+        padding: 15px;
+    }
+    &-sell{
+        font-size: 1.5rem;
+    }
+    &-btn{
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 5px;
+        border: 1px solid #eee;
+        font-size: 1.9rem;
+        font-family: inherit;
+        outline: none;
+        background-color: $caribbean-green;
+        color: $white;
+        margin-bottom: 2rem;
+    }
+}
+
+.cart-container{
+    position: absolute;
+    top: 8rem;
+    left: 5rem;
+    flex-direction: column;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    background-color: #FFF;
+    box-shadow: 0 0 8px 3px #eee;
+    display: none;
+    z-index: 99;
+}
+table, th, td {
+border: 1px solid #eee;
+border-collapse: collapse;
+padding: 15px;
+}
+.table-cart{
+width: 80%;
+
+}
+.close{
+cursor: pointer;
+color: red;
+align-self: flex-end;
+padding: 5px;
+}
+.active.cart-container{
+    display: flex;
+}

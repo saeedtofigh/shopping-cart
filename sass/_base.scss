@@ -1,0 +1,28 @@
+$paradise-pink: #ef476fff;
+$orange-yellow-crayola: #ffd166ff;
+$caribbean-green: #06d6a0ff;
+$blue-ncs: #118ab2ff;
+$midnight-green-eagle-green: #073b4cff;
+$white: #fff;
+$black: #000;
+$light-block: #222;
+
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Tajawal', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-row-gap: 3rem;
+}

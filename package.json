@@ -1,0 +1,14 @@
+{
+  "name": "shopping-cart",
+  "version": "1.0.0",
+  "description": "shopping cart prj ",
+  "main": "index.js",
+  "scripts": {
+    "w": "node-sass sass/main.scss css/style.css --watch"
+  },
+  "author": "Saeid Tofigh",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

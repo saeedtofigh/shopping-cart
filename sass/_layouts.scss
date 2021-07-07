@@ -1,0 +1,106 @@
+.header{
+    background-color: $white;
+    box-shadow: 0 0 7px 4px #eee;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    &_logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &_box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 95%;
+        justify-content: space-between;
+    }
+    &-img{
+        width: 18rem;
+        height: 12rem;
+    }
+    &-heading{
+        font-size: 2.9rem;
+        color: #F91839;
+        font-weight: 700;
+    }
+    &-logo-card{
+        font-size: 8rem !important;
+        cursor: pointer;
+        color: $midnight-green-eagle-green;
+    }
+}
+.nav{
+    grid-column: 1/-1;
+    margin-top: -3rem;
+    grid-row: 2/3;
+    width: 100%;
+    background-color: #fdfeff;
+    border-top: 1px solid #eee;
+
+    &_list{
+        list-style: none;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &-item{
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: $light-block;
+            transition: border-bottom 1ms;
+            &:hover{
+                border-bottom: 5px solid $midnight-green-eagle-green;
+                border-radius: 8px;
+            }
+        }
+    }
+    &_menu{
+        display: none;
+    }
+}
+.main{
+    grid-column: 1/-1;
+
+    // background-color: $blue-ncs;
+    grid-row: 3/6;
+    display: grid;
+    place-items: center;
+    &_box{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, max(100px));
+        grid-row-gap: 5rem;
+        grid-column-gap: 30rem;
+    }
+}
+.footer{
+    grid-column: 1/-1;
+
+    background-color: $orange-yellow-crayola;
+    &_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-heading{
+        font-size: 2.9rem;
+    }
+    &-link{
+        color: $midnight-green-eagle-green;
+        text-decoration: none;
+        border: 2px solid $paradise-pink;
+        padding: 5px;
+        font-size: 2.4rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        font-family: inherit;
+        &:hover{
+            background-color: $paradise-pink;
+            color: $white;
+        }
+    }
+}
+
